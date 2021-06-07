@@ -33,6 +33,16 @@ section,
 summary {
   display: block;
 }
+
+main {
+  width: 70%;
+  max-width: 768px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
 audio,
 canvas,
 progress,

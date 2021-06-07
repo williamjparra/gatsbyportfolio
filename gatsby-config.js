@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `WilliamDev`,
+    description: `this is my portfolio build in react and gatsby, also y use sanity.io to manage my blog post, y write about expressjs, react, react-native, golang, and more `,
+    author: `@williamjparra`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,13 +19,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `WilliamDevPortfolio`,
+        short_name: `WilliamDev`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/bhhulogo.ico`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: 'src/utils/typography.js'
       },
     },
     `gatsby-plugin-gatsby-cloud`,
