@@ -7,10 +7,11 @@ export const BlogProvider = ({children}) => {
 
     const animationButton = () => {
         setToggle(!toggle)
+        console.log(toggle)
     }
 
     return (
-        <BlogContext.Provider values={{
+        <BlogContext.Provider value={{
             toggle,
             animationButton
         }}>
