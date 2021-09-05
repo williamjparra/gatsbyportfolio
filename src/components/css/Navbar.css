@@ -1,0 +1,37 @@
+nav {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: solid 4px black;
+  justify-content: space-between;
+}
+
+nav span {
+  width: 10%;
+  text-align: center;
+}
+
+nav span a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .navButtons {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}
+
+nav .navButtons a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav .navButtons a:hover {
+  color: red;
+}

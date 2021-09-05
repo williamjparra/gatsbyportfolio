@@ -8,6 +8,16 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `h5dvndkv`,
+        dataset: `production`,
+        watchMode: true,
+        overlayDrafts: true,
+        token: 'sk7OeK0mpSwN3OVBL0EskwfbRQugJX277c53T7Cm8dWbPpGvjAjrHx6aofFNlsvRz6m5Zw9XkEe24ivXLPeaeErHfDL7Vq6sDrKLogQYlgfvJH9qRGP2oNXRXwoljjFUf1OXkQ30VLmMIGLgofJdzWIAVsipApU5WhRhzgSzqWNu7kFP60Oj'
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
