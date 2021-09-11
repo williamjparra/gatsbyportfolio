@@ -11,7 +11,7 @@ const NavBar = () => {
                 </Link>
             </span>
             <div className="navButtons">
-                <Link to="/about">About</Link>
+                <Link to="/#about">About</Link>
                 <Link to="/contact">Contact</Link>
                 <Link to="/blog">Blog</Link>
             </div>

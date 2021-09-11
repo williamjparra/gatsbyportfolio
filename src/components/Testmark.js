@@ -1,8 +1,9 @@
-import * as React from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby';
 import Markdown from 'react-markdown'
 
 const TestMark = () => {
+
     const data = useStaticQuery(graphql`
     query MyQuery {
         sanityMarkDownPost {
@@ -20,7 +21,7 @@ const TestMark = () => {
             ArticleMarkDown
             }
         }
-    `);
+    `); 
 
     //console.log(data)
 
@@ -34,13 +35,27 @@ const TestMark = () => {
                         //console.log(children)
 
                         if(node.properties.title && node.properties.title.includes('youtube-embed')) {
-                            return (<iframe src={node.properties.href} 
-                                title="YouTube video player" 
-                                frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen 
-                                style={{margin: "0 auto", display: "block", width: "100%", height: 768*0.56, marginBottom: 30}}
-                                ></iframe>
+                            return (
+                                <div style={{
+                                    position: "relative",
+                                    paddingBottom: "56.25"
+                                }}>
+                                    <iframe src={node.properties.href}
+                                        title="YouTube video player" 
+                                        frameBorder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowFullScreen 
+                                        style={{
+                                            margin: "0 auto", 
+                                            display: "block",
+                                            width: "90%",
+                                            maxWidth: 768, 
+                                            height: 768*0.56 /*{videoPlayer.current.clientWidth*0.56}*/, 
+                                            marginBottom: 30
+                                        }}
+                                    >
+                                    </iframe>
+                                </div>
                             )
                         }
                         
@@ -49,11 +64,7 @@ const TestMark = () => {
                         </a>)                  
                     },
                     img: (i) => {
-                        console.log(i)
-                        return(<div>
-                            <img src={i.src} alt={i.alt} />
-                            <p>"aqui va una imagen"</p>
-                        </div>)
+                        return(<img src={i.src} alt={i.alt} />)
                     }
                 }}
             >

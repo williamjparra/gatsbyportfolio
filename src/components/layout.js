@@ -5,9 +5,10 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Navbar from './NavBar'
+import * as React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Navbar from './NavBar';
+import Footer from './Footer';
 
 import './css/layout.css'
 
@@ -26,12 +27,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <h3>
-        {data.site.siteMetadata?.title || `WilliamDev`}
-      </h3>
-      <div className="container">
-        {children}
-      </div>
+      <main>
+        <div className="container">
+          <h3>
+            {data.site.siteMetadata?.title || `WilliamDev`}
+          </h3>
+          {children}
+        </div>
+      </main>
+      <Footer />
     </>
   )
 }

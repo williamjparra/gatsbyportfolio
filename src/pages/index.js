@@ -1,8 +1,7 @@
 import * as React from "react"
-import TestMark from '../components/Testmark'
 
 const IndexPage = () => (
-  <>
+  <main>
     <h1>
       esto es main
     </h1>
@@ -13,9 +12,8 @@ const IndexPage = () => (
       maxWidth: 768,
       margin: "0 auto"
     }}>
-      <TestMark />
     </div>
-  </>
+  </main>
 )
 
 export default IndexPage

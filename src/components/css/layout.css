@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -9,12 +10,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #bee7e8;
 }
+
 article,
 aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -22,6 +23,17 @@ section,
 summary {
   display: block;
 }
+
+main {
+  min-height: 50vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 audio,
 canvas,
 progress,
