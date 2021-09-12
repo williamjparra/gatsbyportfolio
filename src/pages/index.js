@@ -1,19 +1,16 @@
 import * as React from "react"
+import Projects from '../components/Projects'
 
 const IndexPage = () => (
-  <main>
+  <div>
     <h1>
-      esto es main
+      esto es el main
     </h1>
     <p>
       hi
     </p>
-    <div style={{
-      maxWidth: 768,
-      margin: "0 auto"
-    }}>
-    </div>
-  </main>
+    <Projects />
+  </div>
 )
 
 export default IndexPage
