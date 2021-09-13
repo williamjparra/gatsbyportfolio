@@ -25,13 +25,13 @@ summary {
 }
 
 main {
-  min-height: 60vh;
+  min-height: 70vh;
   padding: 0;
 }
 
 .container {
   width: 90%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 

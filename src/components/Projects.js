@@ -9,20 +9,17 @@ const Projects = () => {
         query Project {
             allSanityProjects {
                 nodes {
+                    title
                     githubLink
                     description
                     mainImage {
-                        asset {
-                            url
-                        }
+                        ...ImageWithPreview
                     }
                     id
                 }
             }
         }
     `);
-
-    console.log(data.allSanityProjects.nodes)
 
     return(
         <section className="Projects-Container" id="projects">

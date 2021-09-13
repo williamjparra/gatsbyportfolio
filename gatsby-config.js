@@ -18,6 +18,18 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-sanity-image`,
+      options: {
+        projectId: `h5dvndkv`,
+        dataset: `production`,
+        defaultImageConfig: {
+          quality: 70,
+          fit: `max`,
+          auto: `format`
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

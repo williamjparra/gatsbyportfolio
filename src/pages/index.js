@@ -2,7 +2,7 @@ import * as React from "react"
 import Projects from '../components/Projects'
 
 const IndexPage = () => (
-  <div>
+  <>
     <h1>
       esto es el main
     </h1>
@@ -10,7 +10,7 @@ const IndexPage = () => (
       hi
     </p>
     <Projects />
-  </div>
+  </>
 )
 
 export default IndexPage

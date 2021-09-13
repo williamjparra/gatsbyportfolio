@@ -1,15 +1,21 @@
 import React from "react";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import {getFluidGatsbyImage} from 'gatsby-source-sanity'
+import SanityImage from "gatsby-plugin-sanity-image"
 
 const ProjectCard = ({project}) => {
-    console.log(project.mainImage.asset)
+    console.log(project)
 
     return (
         <div className="card">
-            <div className="card-image">
-                <img src={project.mainImage.asset.url} />
+            <div className="title-container">
+                <h3>{project.title}</h3>
             </div>
+            <div className="card-image">
+                <SanityImage {...project.mainImage} width={500} alt="hola"/>
+            </div>
+            <p>
+                {project.description}
+            </p>
+            <a href={project.githubLink} target="_Blank" rel="noreferrer">see te code on github</a>
         </div>
     )
 }
