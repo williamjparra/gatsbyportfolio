@@ -2,8 +2,6 @@ import React from "react";
 import SanityImage from "gatsby-plugin-sanity-image"
 
 const ProjectCard = ({project}) => {
-    console.log(project)
-
     return (
         <div className="card">
             <div className="title-container">
