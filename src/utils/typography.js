@@ -4,17 +4,26 @@ const typography = new Typography({
     baseFontSize: '18px',
     baseLineHeight: 1.66,
     headerFontFamily: [
-        'Segoe UI',
         'Roboto',
+        'Segoe UI',
         'Lato',
         'Helvetica Neue',
         'Arial'
     ],
     bodyFontFamily: [
+        'Roboto',
         'Oxygen',
         'Open Sans',
-        'Roboto',
         'Georgia'
+    ],
+    googleFonts: [
+        {
+            name: 'Roboto',
+            styles: [
+                '700',
+                '500'
+            ]
+        }
     ]
 })
 

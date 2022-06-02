@@ -1,0 +1,18 @@
+.navbar-con {
+    margin-top: 8px;
+    width: 100%;
+    padding: 16px 32px;
+    position: fixed;
+    display: flex;
+    border-top: solid 8px white;
+    justify-content: space-between;
+    border-bottom: solid 8px white;
+    background-color: black;
+}
+.nav-item {
+    color: white;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+}

@@ -1,0 +1,24 @@
+html {
+    font-family: 'Roboto';
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0;
+}
+
+.main-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-top: 118px;
+}

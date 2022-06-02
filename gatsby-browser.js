@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 const React = require("react");
-const Layout = require("./src/components/layout").default
+const Layout = require("./src/containers/layout/index").default
 const { BlogProvider } = require('./src/Context')
 
 exports.wrapRootElement= ({element}) => (
