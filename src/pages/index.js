@@ -1,16 +1,8 @@
 import * as React from "react"
-import Projects from '../components/Projects'
+import Home from '../containers/home'
 
 const IndexPage = () => (
-  <>
-    <h1>
-      esto es el main
-    </h1>
-    <p>
-      hi
-    </p>
-    <Projects />
-  </>
+  <Home />
 )
 
 export default IndexPage

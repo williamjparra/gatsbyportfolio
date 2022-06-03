@@ -1,0 +1,50 @@
+.hero-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 110vh;
+    padding-top: 10px;
+}
+
+/*left hero styles */
+
+.left-hero {
+    height: 100%;
+    padding: 32px;
+    padding-top: 110px;
+    width: 50%;
+    border-right: solid white 2px;
+}
+
+.left-hero h1 {
+    font-size: 96px;
+}
+
+
+/* left side of the hero */
+.right-hero {
+    height: 100%;
+    padding: 32px;
+    padding-top: 142px;
+    width: 50%;
+    border-left: solid white 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-hero h3 {
+    color: #f7f4f3;
+    font-size: 64px;
+    max-width: 60%;
+    margin-left: 128px;
+    font-weight: 200
+}
+
+.right-hero .soft-skills-talker {
+    margin-left: 128px;
+    font-size: 32px;
+}
+
+.right-hero .soft-skills-talker span {
+    display: block
+}

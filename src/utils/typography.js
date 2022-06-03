@@ -21,7 +21,8 @@ const typography = new Typography({
             name: 'Roboto',
             styles: [
                 '700',
-                '500'
+                '500',
+                '300'
             ]
         }
     ]
