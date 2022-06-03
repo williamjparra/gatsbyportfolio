@@ -14,9 +14,9 @@ export default function Hero() {
                 passion for web development, being envolved in the procces of create amazing styled UI's
             </h3>
             <div className='soft-skills-talker'>
-                <span>problem solving</span>
-                <span>passion for learning</span>
-                <span>always improving</span>
+                <span>Problem Solving</span>
+                <span>Passion For Learning</span>
+                <span>Always Improving</span>
             </div>
         </div>
     </header>

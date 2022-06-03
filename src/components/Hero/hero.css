@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: row;
     height: 110vh;
-    padding-top: 10px;
+    padding-top: 8px;
+    border-bottom: solid white 4px;
 }
 
 /*left hero styles */
@@ -37,7 +38,8 @@
     font-size: 64px;
     max-width: 60%;
     margin-left: 128px;
-    font-weight: 200
+    font-weight: 300;
+    opacity: 0.8;
 }
 
 .right-hero .soft-skills-talker {
