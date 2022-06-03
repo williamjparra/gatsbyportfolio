@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 import './index.css'
 
-export default function navbar() {
+export default function Navbar() {
+  const [spining, setSpining] = useState(false) 
+
   return (
-    <>
-        <nav className="navbar-con">
-            <span className='nav-item'>
-                Options
+    <div>
+        <nav className='navbar-con'>
+            <span 
+              className='nav-item' 
+              onMouseOver={() => setSpining(true)} 
+              onMouseLeave={() => setSpining(false)}
+            >
+                {"Options"}
+                <FontAwesomeIcon icon={faPaperPlane} size="1x" {...spining ? {spin: true} : null}/>
             </span>
             <Link className='nav-item' to="/">
                 <span>
@@ -19,6 +28,6 @@ export default function navbar() {
                 Full-Stack
             </span>
         </nav>
-    </>
+    </div>
   )
 }
