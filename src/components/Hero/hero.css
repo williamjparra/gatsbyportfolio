@@ -71,3 +71,16 @@
         color: #fff
     }
 }
+
+
+@media (max-width: 1440px) {
+    .left-hero h1 {
+        font-size: 94px
+    }
+    .right-hero h3 {
+        font-size: 50px;
+    }
+    .right-hero .soft-skills-talker h4 {
+        font-size: 40px
+    }
+}

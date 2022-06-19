@@ -1,0 +1,36 @@
+.projects-items-container {
+    width: 100%;
+    margin: 0;
+    border-bottom: solid 4px #fff;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-bottom: 16px;
+    min-height: 300px;
+    cursor: pointer;
+}
+
+.projects-items-container * {
+    margin: 0;
+}
+
+.index-container {
+    flex-basis: 20%;
+}
+
+.title-container {
+    flex-basis: 40%;
+}
+
+.title-container h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    word-wrap: break-word;
+    font-size: 80px;
+}
+
+.description-container {
+    max-width: 300px;
+}
