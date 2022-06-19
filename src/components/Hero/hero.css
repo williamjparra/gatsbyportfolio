@@ -18,7 +18,9 @@
 }
 
 .left-hero h1 {
-    font-size: 96px;
+    font-size: 120px;
+    font-weight: 500;
+    line-height: 1;
 }
 
 
@@ -47,6 +49,25 @@
     font-size: 32px;
 }
 
-.right-hero .soft-skills-talker span {
-    display: block
+.right-hero .soft-skills-talker h4 {
+    font-size: 48px;
+    letter-spacing: -2px;
+}
+
+.right-hero .soft-skills-talker h4 span {
+    display: block;
+    position: relative;
+    z-index: -1;
+    color: var(--start-color);
+    animation: animated 9s infinite;
+    animation-delay: var(--delay);
+}
+
+@keyframes animated {
+    0%, 16.67%, 100% {
+        color: var(--start-color)
+    }
+    33.333%, 83.333% {
+        color: #fff
+    }
 }

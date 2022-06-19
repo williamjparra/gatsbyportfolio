@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 
 import './index.css'
 
@@ -17,7 +17,7 @@ export default function Navbar() {
               onMouseLeave={() => setSpining(false)}
             >
                 {"Options"}
-                <FontAwesomeIcon icon={faPaperPlane} size="1x" {...spining ? {spin: true} : null}/>
+                <FontAwesomeIcon icon={faAnglesDown}/>
             </span>
             <Link className='nav-item' to="/">
                 <span>

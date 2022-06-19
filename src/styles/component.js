@@ -10,6 +10,12 @@ export const colors = {
     Black: '#000'
 }
 
+export const BodyContainer = styled.div`
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+`
+
 export const StyledNav = styled.nav`
     display: flex;
     align-items: center;
