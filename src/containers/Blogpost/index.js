@@ -1,31 +1,14 @@
 import React from 'react'
-import { useStaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import { BlogPostBodyContainer } from '../../styles/component'
 import ReactMarkdown from 'react-markdown';
 
 //import of the components for the layout
 import Anchor from '../../components/AnchorTagBlog';
 
-export default function BlogPostContainer({slug}) {
+export default function BlogPostContainer({ data }) {
 
-    const {sanityMarkDownPost: data} = useStaticQuery(graphql`
-        query projects($slug: String) {
-            sanityMarkDownPost(slug: {current: {eq: $slug}}) {
-                ArticleMarkDown
-                imageAlt
-                mainImage {
-                    asset {
-                        url
-                    }
-                }
-                publishedAt(fromNow: true)
-                slug {
-                current
-                }
-                title
-            }
-        }
-    `)
+  const { sanityMarkDownPost: post } = data 
 
   return (
     <BlogPostBodyContainer>
@@ -34,8 +17,27 @@ export default function BlogPostContainer({slug}) {
                 components={{
                     a: ({node, children}) => <Anchor node={node} children={children} />,
                 }}
-                children={data.ArticleMarkDown}
+                children={post.ArticleMarkDown}
             />
     </BlogPostBodyContainer>
   )
 }
+
+export const query = graphql`
+    query projects($slug: String) {
+        sanityMarkDownPost(slug: {current: {eq: $slug}}) {
+            ArticleMarkDown
+            imageAlt
+            mainImage {
+                asset {
+                    url
+                }
+            }
+            publishedAt(fromNow: true)
+            slug {
+            current
+            }
+            title
+        }
+    }
+`

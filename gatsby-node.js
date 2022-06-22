@@ -7,8 +7,8 @@
 const path = require('path')
 
 // You can delete this file if you're not using it
-exports.createPages = async ({ graphql, actions,  }) => {
-    const data = await graphql(`
+exports.createPages = async ({ graphql, actions  }) => {
+    const {data} = await graphql(`
         query posts {
                 allSanityMarkDownPost {
                 nodes {
@@ -20,10 +20,12 @@ exports.createPages = async ({ graphql, actions,  }) => {
         }
     `)
 
+        console.log(actions)
+
     data.allSanityMarkDownPost.nodes.forEach(node => {
-        actions.createPages({
+        actions.createPage({
             path: `/posts/${node.slug.current}`,
-            Component: path.resolve('./src/containers/Blogpost/index.js'),
+            component: path.resolve('./src/containers/Blogpost/index.js'),
             context: { slug: node.slug.current }
         })
     })
