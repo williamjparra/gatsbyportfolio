@@ -10,6 +10,14 @@ export const colors = {
     Black: '#000'
 }
 
+export const BlogPostBodyContainer = styled.article`
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    text-aling: left;
+    margin-top: 128px;
+`
+
 export const BodyContainer = styled.div`
     width: 100%;
     max-width: 1440px;
