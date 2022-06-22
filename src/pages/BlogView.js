@@ -3,6 +3,6 @@ import BlogContainer from '../containers/Blogpost'
 
 export default function BlogView() {
   return (
-    <BlogContainer />
+    <BlogContainer slug="kmo-decir-klk"/>
   )
 }

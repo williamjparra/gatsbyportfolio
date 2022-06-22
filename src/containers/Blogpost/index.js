@@ -2,14 +2,15 @@ import React from 'react'
 import { useStaticQuery, graphql } from "gatsby";
 import { BlogPostBodyContainer } from '../../styles/component'
 import ReactMarkdown from 'react-markdown';
-//import of the components layout
 
+//import of the components for the layout
 import Anchor from '../../components/AnchorTagBlog';
 
-export default function BlogPostContainer() {
+export default function BlogPostContainer({slug}) {
+
     const {sanityMarkDownPost: data} = useStaticQuery(graphql`
-        query projects {
-            sanityMarkDownPost(slug: {current: {eq: "kmo-decir-klk"}}) {
+        query projects($slug: String) {
+            sanityMarkDownPost(slug: {current: {eq: $slug}}) {
                 ArticleMarkDown
                 imageAlt
                 mainImage {
