@@ -23,16 +23,12 @@ const TestMark = () => {
         }
     `); 
 
-    //console.log(data)
-
     return (
         <>
             <h3>hola</h3>
             <Markdown
                 components={{
                     a: ({ node, children}) => {
-                        //console.log(node)
-                        //console.log(children)
 
                         if(node.properties.title && node.properties.title.includes('youtube-embed')) {
                             return (

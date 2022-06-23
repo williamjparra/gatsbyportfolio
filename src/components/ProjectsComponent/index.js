@@ -23,7 +23,14 @@ export default function Projects() {
       <BodyContainer>
           <section className="projectsContainer">
             {
-                data.nodes.map(({title, description, id, githubLink}, index) => <ProjectView title={title} description={description} githubLink={githubLink} index={index + 1} key={id} />)
+                data.nodes.map(({title, description, id, githubLink}, index) => <ProjectView 
+                        title={title} 
+                        description={description} 
+                        githubLink={githubLink} 
+                        index={index + 1} 
+                        key={id} 
+                    />
+                )
             }
           </section>
       </BodyContainer>
