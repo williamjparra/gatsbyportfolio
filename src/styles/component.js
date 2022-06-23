@@ -20,6 +20,9 @@ export const BlogPostBodyContainer = styled.article`
         padding-bottom: 32px;
         border-bottom: solid 1px #ededed;
         margin-bottom: 16px;
+        h1 {
+            font-size: 80px;
+        }
     }
     p {
         font-size: 20px;
