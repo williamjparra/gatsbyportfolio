@@ -16,6 +16,11 @@ export const BlogPostBodyContainer = styled.article`
     text-aling: left;
     margin-top: 128px;
     padding: 0 32px;
+    header {
+        padding-bottom: 32px;
+        border-bottom: solid 1px #ededed;
+        margin-bottom: 16px;
+    }
     p {
         font-size: 20px;
         font-weight: 300;
