@@ -12,10 +12,27 @@ export const colors = {
 
 export const BlogPostBodyContainer = styled.article`
     width: 100%;
-    max-width: 950px;
+    max-width: 768px;
     margin: 0 auto;
     text-aling: left;
     margin-top: 128px;
+    padding: 0 32px;
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: -0.003em;
+        color: #F7F4F3;
+        a {
+            color: #adb5bd;
+            text-decoration: none;
+            font-weight: 500;
+            transition-duration: 0.27s;
+        }
+        a:hover {
+            color: #CC5803;
+            transition-duration: 0.27s;
+        }
+    }
 `
 
 export const BodyContainer = styled.div`
