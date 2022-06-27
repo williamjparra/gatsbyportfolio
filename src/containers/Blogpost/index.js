@@ -7,10 +7,8 @@ import ReactMarkdown from 'react-markdown';
 import Anchor from '../../components/AnchorTagBlog';
 import Image from '../../components/Image'
 
-export default function BlogPostContainer({ data }) {
-
-    console.log(data)
-
+export default function BlogPostContainer({data}) {
+    
   const { sanityMarkDownPost: post } = data
 
   return (
@@ -18,10 +16,12 @@ export default function BlogPostContainer({ data }) {
             <header>
                 <h1>{post.title}</h1>
                 <small>{post.publishedAt}</small>
-                <Image 
-                    src={post.mainImage.asset.url}
-                    alt={post.imageAlt} 
-                />
+                { 
+                    post.mainImage && <Image 
+                        src={post.mainImage.asset.url}
+                        alt={post.imageAlt} 
+                    />
+                }
             </header>
             <ReactMarkdown
                 components={{
