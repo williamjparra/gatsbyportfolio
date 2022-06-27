@@ -42,7 +42,6 @@ exports.createPages = async ({ graphql, actions }) => {
         })
     })
 
-
     posts.forEach(node => {
         actions.createPage({
             path: `/posts/${node.slug.current}`,
@@ -50,8 +49,4 @@ exports.createPages = async ({ graphql, actions }) => {
             context: { slug: node.slug.current }
         })
     })
-
-
-
-    console.log(data.allSanityMarkDownPost)
 }

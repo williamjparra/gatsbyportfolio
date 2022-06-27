@@ -9,6 +9,13 @@ export const colors = {
     Black: '#000'
 }
 
+export const BasicContainer = styled.div`
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: 128px;
+`
+
 export const BlogPostBodyContainer = styled.article`
     width: 100%;
     max-width: 768px;
