@@ -1,0 +1,34 @@
+.pagination-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: max-content;
+    padding: 8px;
+    align-items: center;
+}
+
+
+
+.pagination-container .pagination-index-button, 
+.go-right-button, 
+.go-left-button {
+    text-align: center;
+    margin: 0 4px;
+    border: solid 2px #fff;
+    border-radius: 4px;
+    width: 42px;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.2s;
+}
+
+.pagination-index-button:hover,
+.go-right-button:hover,
+.go-left-button:hover {
+    color: #CC5803;
+    border: solid 2px #CC5803;
+    transition-duration: 0.2s;
+}
+
+.items {
+    font-size: 25px;
+}
