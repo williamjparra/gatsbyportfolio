@@ -1,0 +1,50 @@
+.article-post {
+    width: 100%;
+    display: flex;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.418);
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    padding-bottom: 8px;
+    min-height: 256px;
+    cursor: pointer;
+    transition-duration: .2s;
+}
+
+.article-post:hover .title-faded,
+.article-post:hover div .post-title,
+.article-post:hover .post-image {
+    transition-duration: .4s;
+    opacity: 1;
+}
+
+.article-right, .article-left {
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+
+.article-left img {
+    height: 256px;
+    width: auto;
+    border-radius: 2px;
+    opacity: 0.8;
+}
+
+.article-right {
+    padding-left: 8px;
+}
+
+.post-title {
+    font-size: 32px;
+    opacity: 0.7;
+}
+
+.title-faded {
+    font-size: 40px;
+    opacity: 0.7;
+}
+
+small {
+    width: 100%;
+    align-self:flex-end;
+}

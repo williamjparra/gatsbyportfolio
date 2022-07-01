@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby'
+import './index.css'
 
 export default function Component({posts}) {
 
@@ -17,19 +18,24 @@ export default function Component({posts}) {
   }
 
   return (
-    <article onClick={moveToLink}>
-      <h3>{title}</h3>
-      <p>
-        {previewText.map(({children}) => `${children.map(({text}) => text)}`)}
-      </p>
-      {
-        mainImage && <img 
-          src={mainImage.asset.url} 
-          alt={imageAlt ? imageAlt : "preview image"}
-        />
-      }
+    <article onClick={moveToLink} className="article-post">
+      <div className="article-left">
+        {
+          mainImage ? <img
+            className="post-image"
+            src={mainImage.asset.url}
+            alt={imageAlt ? imageAlt : "preview image"}
+          /> : <h3 className="title-faded">{title}</h3>
+        }
+      </div>
+      <div className="article-right">
+        {mainImage && <h3 className="post-title">{title}</h3>}
+        <p>
+          {previewText.map(({children}) => `${children.map(({text}) => text)}`)}
+        </p>
+      </div>      
       <small>
-        {publishedAt}
+        <b>Published:</b> {publishedAt}
       </small>
     </article>
   )

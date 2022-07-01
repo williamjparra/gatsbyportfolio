@@ -76,3 +76,9 @@ export const BodyContainer = styled.div`
     max-width: 1440px;
     margin: 0 auto;
 `
+
+export const AllBlogPostContainer = styled.section`
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+`

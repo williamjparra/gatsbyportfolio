@@ -3,6 +3,7 @@ import { BasicContainer } from '../../styles/component'
 import { graphql } from 'gatsby'
 import PostComponent from '../../components/PostComponent'
 import Pagination from '../../components/Pagination'
+import { AllBlogPostContainer } from '../../styles/component'
 
 export default function Blogs(props) {
     const { pageContext, data } = props
@@ -14,11 +15,11 @@ export default function Blogs(props) {
                 TextPlace holder
             </p>
         </header>
-        <section>
+        <AllBlogPostContainer>
             {
                 data.allSanityMarkDownPost.nodes.map(post => <PostComponent posts={post} key={post.id} />)
             }
-        </section>
+        </AllBlogPostContainer>
         <Pagination 
             currentPage={pageContext.currentPage} 
             totalPages={pageContext.numberOfPages} 
