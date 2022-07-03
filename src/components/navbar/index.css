@@ -11,7 +11,7 @@
     background-color: black;
     z-index: 100;
 }
-.nav-item {
+.nav-item, .nav-item-disable {
     color: #F7F4F3;
     font-family: 'Roboto';
     text-decoration: none;

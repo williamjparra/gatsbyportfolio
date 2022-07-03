@@ -24,7 +24,7 @@ export default function Navbar() {
                     WilliamDev
                 </span>
             </Link>
-            <span className='nav-item'>
+            <span className='nav-item-disable'>
                 Full-Stack
             </span>
         </nav>

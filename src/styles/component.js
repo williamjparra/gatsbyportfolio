@@ -16,6 +16,16 @@ export const BasicContainer = styled.div`
     padding-top: 128px;
 `
 
+export const AllPostHeader = styled.header`
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    h1 {
+        font-size: 64px;
+    }
+`
+
 export const BlogPostBodyContainer = styled.article`
     width: 100%;
     max-width: 768px;
