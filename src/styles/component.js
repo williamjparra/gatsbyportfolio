@@ -85,6 +85,9 @@ export const BodyContainer = styled.div`
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    @media (max-width: 1440px) {
+        max-width: 1024px;
+    }
 `
 
 export const AllBlogPostContainer = styled.section`

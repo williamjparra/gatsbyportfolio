@@ -26,7 +26,7 @@ export default function Projects() {
                 data.nodes.map(({title, description, id, githubLink}, index) => <ProjectView 
                         title={title} 
                         description={description} 
-                        githubLink={githubLink} 
+                        link={githubLink} 
                         index={index + 1} 
                         key={id} 
                     />
