@@ -4,7 +4,7 @@ import './index.css'
 
 export default function ProjectView({title, description, link, index}) {
   return (
-    <a href={link} target="_Blank" no-reffer className="projects-anchor">
+    <a href={link} target="_Blank" rel='noreferrer' className="projects-anchor">
       <article className="projects-items-container" >
           <div className="index-container">
             <span>

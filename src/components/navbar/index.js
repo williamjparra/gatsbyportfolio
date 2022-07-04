@@ -1,23 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
+import { BiCertification } from "react-icons/bi"
 
 import './index.css'
 
 export default function Navbar() {
-  const [spining, setSpining] = useState(false) 
-
   return (
     <div>
         <nav className='navbar-con'>
             <span 
               className='nav-item' 
-              onMouseOver={() => setSpining(true)} 
-              onMouseLeave={() => setSpining(false)}
             >
                 {"Options"}
-                <FontAwesomeIcon icon={faAnglesDown}/>
+                <BiCertification />
             </span>
             <Link className='nav-item' to="/">
                 <span>

@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: `WilliamDev`,
@@ -10,18 +12,18 @@ module.exports = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: `h5dvndkv`,
-        dataset: `production`,
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
         watchMode: true,
         overlayDrafts: true,
-        token: 'sk7OeK0mpSwN3OVBL0EskwfbRQugJX277c53T7Cm8dWbPpGvjAjrHx6aofFNlsvRz6m5Zw9XkEe24ivXLPeaeErHfDL7Vq6sDrKLogQYlgfvJH9qRGP2oNXRXwoljjFUf1OXkQ30VLmMIGLgofJdzWIAVsipApU5WhRhzgSzqWNu7kFP60Oj'
+        token: process.env.SANITY_TOKEN
       }
     },
     {
       resolve: `gatsby-plugin-sanity-image`,
       options: {
-        projectId: `h5dvndkv`,
-        dataset: `production`,
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET,
         defaultImageConfig: {
           quality: 70,
           fit: `max`,
