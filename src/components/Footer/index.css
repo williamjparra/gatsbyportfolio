@@ -49,6 +49,7 @@ footer .footerContainer {
     font-size: 32px;
     cursor: pointer;
     transition-duration: 0.3s;
+    min-width: 350px;
 }
 
 .contact-button:hover {
@@ -57,4 +58,6 @@ footer .footerContainer {
     font-size: 40px;
 }
 
-
+.footer-socials .footer-social-containers {
+    margin: 0 auto;
+}

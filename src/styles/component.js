@@ -14,6 +14,7 @@ export const BasicContainer = styled.div`
     margin: 0;
     padding: 0;
     padding-top: 128px;
+    min-height: 75vh;
 `
 
 export const AllPostHeader = styled.header`
@@ -29,6 +30,7 @@ export const AllPostHeader = styled.header`
 export const BlogPostBodyContainer = styled.article`
     width: 100%;
     max-width: 768px;
+    min-height: 75vh;
     margin: 0 auto;
     text-aling: left;
     margin-top: 128px;

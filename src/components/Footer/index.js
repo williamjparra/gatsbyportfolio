@@ -24,32 +24,46 @@ const Footer = () => {
                     </p>
                 </section>
                 <section className="footer-socials">
-                    <a href="#" target="_Blank" no-refer>
-                        <FaLinkedin />
-                        linkedin
-                    </a>
-                    <a href="#" target="_Blank" no-refer>
-                         <FaInstagramSquare />
-                        instragram
-                    </a>
-                    <a href="#" target="_Blank" no-refer>
-                        <FaTwitterSquare />
-                        Twitter
-                    </a>
-                    <div 
-                        className="contact-button" 
-                        onClick={() => navigate('/contact')}
-                        onMouseEnter={mouseInteraction}
-                        onMouseLeave={mouseInteraction}
-                    >
-                        <b>
-                            Contact Me
-                        </b>
-                        {
-                            !activeButton
-                            ? <BsCaretRight /> 
-                            : <BsCaretRightFill />
-                        }
+                    <div className="footer-social-containers">
+                        <a 
+                            href="https://www.linkedin.com/in/william-parra-677a39175/" 
+                            target="_Blank" 
+                            rel="noreferrer"
+                        >
+                            <FaLinkedin />
+                            linkedin
+                        </a>
+                        <a 
+                            href="https://www.instagram.com/williamdev.js/" 
+                            target="_Blank" 
+                            rel="noreferrer"
+                        >
+                            <FaInstagramSquare />
+                            instragram
+                        </a>
+                        <a 
+                            href="https://www.twitter.com/williamdev" 
+                            target="_Blank" 
+                            rel="noreferrer"
+                        >
+                            <FaTwitterSquare />
+                            Twitter
+                        </a>
+                        <div 
+                            className="contact-button" 
+                            onClick={() => navigate('/contact')}
+                            onMouseEnter={mouseInteraction}
+                            onMouseLeave={mouseInteraction}
+                        >
+                            <b>
+                                Contact Me
+                            </b>
+                            {
+                                !activeButton
+                                ? <BsCaretRight /> 
+                                : <BsCaretRightFill />
+                            }
+                        </div>
                     </div>
                 </section>
             </div>

@@ -1,7 +1,11 @@
 import React from 'react'
+import { BasicContainer } from '../../styles/component'
+
 
 export default function ContactContainer() {
   return (
-    <div>ContactContainer</div>
+    <BasicContainer>
+        <div>ContactContainer</div>
+    </BasicContainer>
   )
 }
