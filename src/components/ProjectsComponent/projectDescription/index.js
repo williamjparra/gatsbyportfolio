@@ -1,12 +1,8 @@
 import React from 'react'
-import { navigate } from 'gatsby'
 import './index.css'
 
 
 export default function ProjectView({title, description, link, index}) {
-
-  console.log(link)
-
   return (
     <a href={link} target="_Blank" no-reffer className="projects-anchor">
       <article className="projects-items-container" >
