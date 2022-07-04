@@ -16,11 +16,11 @@ const Footer = () => {
             <div className="footerContainer">
                 <section className="footer-description">
                     <p>
-                    Full-stack web developer with strengths in nodejs, reactjs, redux-thunk, gatsby, styled-components, express, graphql with apollo and MongoDB. Also passionate about teaching, with a soft skill in patience.<br /><br />
+                        Full-stack web developer with strengths in nodejs, reactjs, redux-thunk, gatsby, styled-components, express, graphql with apollo and MongoDB. Also passionate about teaching, with a soft skill in patience.<br /><br />
 
-                    Looking for an opportunity to use my skills to build amazing things that make a difference.<br /><br />
+                        Looking for an opportunity to use my skills to build amazing things that make a difference.<br /><br />
 
-                    Please reach out if you need a full-stack web developer on your team!
+                        Please reach out if you need a full-stack web developer on your team!
                     </p>
                 </section>
                 <section className="footer-socials">

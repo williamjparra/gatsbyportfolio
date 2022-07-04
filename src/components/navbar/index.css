@@ -10,7 +10,23 @@
     justify-content: space-between;
     background-color: black;
     z-index: 100;
+    align-items: center;
+    transition-duration: 0.3s;
 }
+
+.navbar-con.active {
+    border-color: #000;
+    background-color: #CC5803;
+    transition-duration: 0.3s;
+}
+
+.navbar-con.active .nav-item,
+.navbar-con.active .nav-item-disable {
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+
 .nav-item, .nav-item-disable {
     color: #F7F4F3;
     font-family: 'Roboto';
@@ -21,23 +37,60 @@
     align-items: center;
     gap: 5px;
     transition-duration: 0.2s;
+    text-align: center;
+    min-width: 120px;
 }
 
 .nav-item:hover {
     color: #CC5803;
     cursor: pointer;
     transition-duration: 0.2s;
+    text-decoration: underline;
 }
 
 .nav-item:hover svg {
-    /*animation: pulse 1.5s infinite*/
+    animation: rotate-button 0.5s;
 }
 
-@keyframes pulse{
-    0%, 100%{
-       font-size: 30px
-    }
-    50% {
-        font-size: 16px
+.options-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 99;
+    background-color: #CC5803;
+    top: -100%;
+    transition-duration: 0.3s;
+}
+
+.options-container.active {
+    top: 0
+}
+
+.links-container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.links-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.links-container a:hover {
+    text-decoration: underline;
+}
+
+.links-container a .link-title {
+    margin-bottom: 0;
+    font-size: 96px;
+}
+
+
+@keyframes rotate-button{
+    100% {
+        transform: rotate(180deg)
     }
 }
