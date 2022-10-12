@@ -27,9 +27,9 @@ export default function Navbar() {
                   Contact
                 </h4>
               </Link>
-              <Link to="/curriculum" onClick={() => setOpen(false)}>
+              <Link to="/" onClick={() => setOpen(false)}>
                 <h4 className="link-title">
-                  Curriculum Vitae
+                  Home
                 </h4>
               </Link>
             </section>
