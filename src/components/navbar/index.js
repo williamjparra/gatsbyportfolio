@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <>
       <div>
-        <div className={`options-container ${open ? "active" : ""}`}>
+        <div className={"options-container " + `${open ? "active" : ""}`}>
           <BasicContainer>
             <section className="links-container">
               <Link to="/blog" onClick={() => setOpen(false)}>
