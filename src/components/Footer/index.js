@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './index.css'
 import { FaLinkedin, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa'
-import { BsCaretRightFill, BsCaretRight } from 'react-icons/bs'
-import { navigate } from 'gatsby'
+import { TbHandStop } from 'react-icons/tb'
+
 
 const Footer = () => {
     const [activeButton, setActiveButton] = useState(false)
@@ -42,27 +42,23 @@ const Footer = () => {
                             instragram
                         </a>
                         <a 
-                            href="https://www.twitter.com/williamdev" 
+                            href="https://www.twitter.com/WilliamdevJs" 
                             target="_Blank" 
                             rel="noreferrer"
                         >
                             <FaTwitterSquare />
                             Twitter
                         </a>
-                        <div 
+                        <div
                             className="contact-button" 
-                            onClick={() => navigate('/contact')}
                             onMouseEnter={mouseInteraction}
                             onMouseLeave={mouseInteraction}
+                            role="banner"
                         >
                             <b>
                                 Contact Me
                             </b>
-                            {
-                                !activeButton
-                                ? <BsCaretRight /> 
-                                : <BsCaretRightFill />
-                            }
+                            <TbHandStop />
                         </div>
                     </div>
                 </section>

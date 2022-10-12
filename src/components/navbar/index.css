@@ -11,7 +11,6 @@
     background-color: black;
     z-index: 100;
     align-items: center;
-    transition-duration: 0.3s;
 }
 
 .navbar-con.active {
@@ -54,22 +53,27 @@
 
 .options-container {
     width: 100vw;
-    height: 100vh;
+    height: 0;
     position: fixed;
+    overflow: hidden;
     z-index: 99;
     background-color: #CC5803;
-    top: -100%;
     transition-duration: 0.3s;
 }
 
 .options-container.active {
-    top: 0
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    transition-duration: 0.3s;
 }
 
 .links-container {
     width: 100%;
     max-width: 768px;
     margin: 0 auto;
+    display: block;
 }
 
 .links-container a {
