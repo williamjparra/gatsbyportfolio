@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './index.css'
 import { FaLinkedin, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa'
 import { BsCaretRightFill, BsCaretRight } from 'react-icons/bs'
-import { navigate } from 'gatsby'
+import { TbHandStop } from 'react-icons/tb'
+
 
 const Footer = () => {
     const [activeButton, setActiveButton] = useState(false)
@@ -51,18 +52,13 @@ const Footer = () => {
                         </a>
                         <div 
                             className="contact-button" 
-                            onClick={() => navigate('/contact')}
                             onMouseEnter={mouseInteraction}
                             onMouseLeave={mouseInteraction}
                         >
                             <b>
                                 Contact Me
                             </b>
-                            {
-                                !activeButton
-                                ? <BsCaretRight /> 
-                                : <BsCaretRightFill />
-                            }
+                            <TbHandStop />
                         </div>
                     </div>
                 </section>

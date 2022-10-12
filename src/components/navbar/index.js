@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { BiCertification } from 'react-icons/bi'
 import { IoMdCloseCircle } from 'react-icons/io'
@@ -10,48 +10,48 @@ import './index.css'
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
+  useEffect(() => {}, [])
+
   return (
     <>
-      <div>
-        <div className={"options-container " + `${open ? "active" : ""}`}>
-          <BasicContainer>
-            <section className="links-container">
-              <Link to="/blog" onClick={() => setOpen(false)}>
-                <h4 className="link-title">
-                  Blogs <SiBloglovin />
-                </h4>
-              </Link>
-              <Link to="/curriculum" onClick={() => setOpen(false)}>
-                <h4 className="link-title">
-                  Curriculum Vitae
-                </h4>
-              </Link>
-              <Link to="/" onClick={() => setOpen(false)}>
-                <h4 className="link-title">
-                  Home
-                </h4>
-              </Link>
-            </section>
-          </BasicContainer>
-        </div>
-          <nav className={`navbar-con ${open ? "active" : ""}`}>
-              <span 
-                className='nav-item'
-                onClick={() => setOpen(!open)}
-              >
-                  {open ? "Close": "Options"}
-                  {open ? <IoMdCloseCircle /> : <BiCertification />}
-              </span>
-              <Link className='nav-item' to="/">
-                  <span>
-                      WilliamDev
-                  </span>
-              </Link>
-              <span className='nav-item-disable'>
-                  Full-Stack
-              </span>
-          </nav>
+      <div className={"options-container " + `${open ? "active" : ""}`}>
+        <BasicContainer>
+          <section className="links-container">
+            <Link to="/blog" onClick={() => setOpen(false)}>
+              <h4 className="link-title">
+                Blogs <SiBloglovin />
+              </h4>
+            </Link>
+            <Link to="/curriculum" onClick={() => setOpen(false)}>
+              <h4 className="link-title">
+                Curriculum Vitae
+              </h4>
+            </Link>
+            <Link to="/" onClick={() => setOpen(false)}>
+              <h4 className="link-title">
+                Home
+              </h4>
+            </Link>
+          </section>
+        </BasicContainer>
       </div>
+      <nav className={`navbar-con ${open ? "active" : ""}`}>
+          <span 
+            className='nav-item'
+            onClick={() => setOpen(!open)}
+          >
+              {open ? "Close": "Options"}
+              {open ? <IoMdCloseCircle /> : <BiCertification />}
+          </span>
+          <Link className='nav-item' to="/">
+              <span>
+                  WilliamDev
+              </span>
+          </Link>
+          <span className='nav-item-disable'>
+              Full-Stack
+          </span>
+      </nav>
     </>
   )
 }
