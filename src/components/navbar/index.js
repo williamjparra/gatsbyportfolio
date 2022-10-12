@@ -12,7 +12,6 @@ export default function Navbar() {
 
   return (
     <>
-      
       <div>
         <div className={`options-container ${open ? "active" : ""}`}>
           <BasicContainer>
@@ -22,9 +21,9 @@ export default function Navbar() {
                   Blogs <SiBloglovin />
                 </h4>
               </Link>
-              <Link to="/contact" onClick={() => setOpen(false)}>
+              <Link to="/curriculum" onClick={() => setOpen(false)}>
                 <h4 className="link-title">
-                  Contact
+                  Curriculum Vitae
                 </h4>
               </Link>
               <Link to="/" onClick={() => setOpen(false)}>

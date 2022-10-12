@@ -42,7 +42,7 @@ const Footer = () => {
                             instragram
                         </a>
                         <a 
-                            href="https://www.twitter.com/williamdev" 
+                            href="https://www.twitter.com/WilliamdevJs" 
                             target="_Blank" 
                             rel="noreferrer"
                         >
