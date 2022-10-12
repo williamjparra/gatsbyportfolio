@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './index.css'
 import { FaLinkedin, FaInstagramSquare, FaTwitterSquare } from 'react-icons/fa'
-import { BsCaretRightFill, BsCaretRight } from 'react-icons/bs'
 import { TbHandStop } from 'react-icons/tb'
 
 
@@ -50,10 +49,11 @@ const Footer = () => {
                             <FaTwitterSquare />
                             Twitter
                         </a>
-                        <div 
+                        <div
                             className="contact-button" 
                             onMouseEnter={mouseInteraction}
                             onMouseLeave={mouseInteraction}
+                            role="banner"
                         >
                             <b>
                                 Contact Me

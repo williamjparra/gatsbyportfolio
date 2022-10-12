@@ -39,6 +39,7 @@ export default function Pagination({currentPage = 1, totalPages = 10}) {
             ? "disbled" 
             : ""}`
           }
+          role="tabbable"
           onClick={goPreviousPage}
         >
             <span className="items">{"<"}</span>
