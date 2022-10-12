@@ -10,11 +10,11 @@ import './index.css'
 export default function Navbar() {
   const [open, setOpen] = useState(false)
 
-  useEffect(() => {}, [])
+  useEffect(() => {}, [open])
 
   return (
     <>
-      <div className={`options-container ${open ? "active" : ""}`}>
+      <section className={`options-container ${open ? "active" : ""}`}>
         <BasicContainer>
           <section className="links-container">
             <Link to="/blog" onClick={() => setOpen(false)}>
@@ -34,7 +34,7 @@ export default function Navbar() {
             </Link>
           </section>
         </BasicContainer>
-      </div>
+      </section>
       <nav className={`navbar-con ${open ? "active" : ""}`}>
           <span 
             className='nav-item'

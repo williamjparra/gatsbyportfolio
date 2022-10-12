@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import { useStaticQuery ,graphql } from 'gatsby'
 import PdfRender from '../../components/PdfRender'
-import { PDFViewer } from '@react-pdf/renderer';
 
 export default function PDFContainer(props) {
     const {file} = useStaticQuery(graphql`
