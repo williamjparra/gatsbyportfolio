@@ -1,8 +1,13 @@
 import React from 'react'
 import PDFContainer from '../containers/CV'
+import { BasicContainer, BodyContainer } from '../styles/component'
 
 export default function curriculum() {
   return (
-    <div><PDFContainer/></div>
+    <BasicContainer>
+      <BodyContainer>
+        <PDFContainer/>
+      </BodyContainer>
+    </BasicContainer>
   )
 }
