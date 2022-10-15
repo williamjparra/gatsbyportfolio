@@ -5,15 +5,16 @@ import PdfRender from '../../components/PdfRender'
 export default function PDFContainer(props) {
     const {file} = useStaticQuery(graphql`
         query projectsAndData {
-            file(id: {eq: "14c3bebf-1890-51ef-8ec2-1acbbb61b867"}) {
+            file(name: {eq: "cv-william"}) {
                 publicURL
                 dir
+                name
             }
         }
     `)
 
     useEffect(() => {}, [])
-
+        console.log(file)
   return (
     <>
         <PdfRender path={file.publicURL}/>

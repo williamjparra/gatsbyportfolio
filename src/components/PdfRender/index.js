@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function PdfRender({path}) {
-    console.log(path)
   return (
     <iframe
         src={path}
