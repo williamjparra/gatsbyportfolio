@@ -14,7 +14,6 @@ export default function PDFContainer(props) {
     `)
 
     useEffect(() => {}, [])
-        console.log(file)
   return (
     <>
         <PdfRender path={file.publicURL}/>

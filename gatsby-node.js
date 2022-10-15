@@ -13,15 +13,20 @@ exports.createPages = async ({ graphql, actions }) => {
                 allSanityMarkDownPost {
                 nodes {
                     slug {
-                    current
+                        current
                     }
+                    _id
                 }
             }
         }
     `)
+
+    console.log(data.allSanityMarkDownPost.nodes.filter(a => {
+        return !a._id.includes("drafts")
+    }))
     
     const PagesArray = [] 
-    const posts = data.allSanityMarkDownPost.nodes
+    const posts = data.allSanityMarkDownPost.nodes.filter(post => !post._id.includes("drafts"))
     const maxPaginationNumber = 10;
     const numberOfPages = Math.ceil( posts.length / maxPaginationNumber)
     
@@ -41,6 +46,8 @@ exports.createPages = async ({ graphql, actions }) => {
             }
         })
     })
+
+    console.log(posts)
 
     posts.forEach(node => {
         actions.createPage({

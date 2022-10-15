@@ -20,7 +20,7 @@ export default function Blogs(props) {
         </AllPostHeader>
         <AllBlogPostContainer>
             {
-                data.allSanityMarkDownPost.nodes.map(post => <PostComponent posts={post} key={post.id} />)
+                data.allSanityMarkDownPost.nodes.filter(a => !a._id.includes("drafts")).map(post => <PostComponent posts={post} key={post.id} />)
             }
         </AllBlogPostContainer>
         {
@@ -37,6 +37,7 @@ export const query = graphql`
     query posts($limit: Int, $skip: Int) {
         allSanityMarkDownPost(limit: $limit, skip: $skip) {
             nodes {
+                _id
                 id
                 title
                 publishedAt(fromNow: true)
