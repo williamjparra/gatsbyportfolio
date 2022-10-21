@@ -20,10 +20,6 @@ exports.createPages = async ({ graphql, actions }) => {
             }
         }
     `)
-
-    console.log(data.allSanityMarkDownPost.nodes.filter(a => {
-        return !a._id.includes("drafts")
-    }))
     
     const PagesArray = [] 
     const posts = data.allSanityMarkDownPost.nodes.filter(post => !post._id.includes("drafts"))
@@ -46,8 +42,6 @@ exports.createPages = async ({ graphql, actions }) => {
             }
         })
     })
-
-    console.log(posts)
 
     posts.forEach(node => {
         actions.createPage({

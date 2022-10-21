@@ -15,7 +15,7 @@ export default function BlogPostContainer({data}) {
     <BlogPostBodyContainer>
             <header>
                 <h1>{post.title}</h1>
-                <small>{post.publishedAt}</small>
+                <small><b>Published: </b>{post.publishedAt}</small>
                 { 
                     post.mainImage && <Image 
                         src={post.mainImage.asset.url}
