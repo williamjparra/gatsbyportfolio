@@ -5,10 +5,8 @@ import PdfRender from '../../components/PdfRender'
 export default function PDFContainer(props) {
     const {file} = useStaticQuery(graphql`
         query projectsAndData {
-            file(name: {eq: "cv-william"}) {
+            file(name: {eq: "cvwjp"}) {
                 publicURL
-                dir
-                name
             }
         }
     `)
